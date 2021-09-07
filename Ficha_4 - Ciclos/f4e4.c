@@ -1,32 +1,26 @@
-/*4. Escreva um programa que leia um numero inteiro 
-e calcule o seu factorial. 
-Exemplos: 4! = 4 * 3 * 2 * 1 = 24, e 0! = 1.*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-int main (){
+
+int main(){
+
+	int x, y, z, w;
 	
-	int  e, cont, i=0;
+	printf("Digite um numero\n");
+	scanf("%d", &y);
 	
-	printf("Introduza  um numero inteiro >> ");
-	scanf("%d", &e);
+			
+			printf("%d! =", y);
+			for (x=y;x>0;x--){
+				
+				z*=x;
+				printf ("%d*", x);
+				
+			}
+			printf("=%d\n", z);
 	
-	
-	printf("\n\n%d!= ", e);
-	
-	
-	do {
-		
-		cont = i*(i+1);
-		
-		printf("%d x ", i);
-		
-		i++;
-						
-	}while(i<=e);
-	
-	printf("= %d\n",cont);
-	return 0;
+system ("pause");
+return 0;
+
 }
