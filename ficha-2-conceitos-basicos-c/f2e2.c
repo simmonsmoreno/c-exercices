@@ -3,21 +3,21 @@
 
 int main()
 {
-	int x, dup;
+    int x, dup;
 
-	printf("Digite um numero inteiro menor que 100 >> ");
-	scanf("d",&x);
-	
-	dup = x*2;
-	
-	if (x<=100)
-	{
-		printf ("%dup", &dup);
-	
-	}else{
-		
-		printf ("Numero invalido");
-	}
+    printf("Digite um numero inteiro menor que 100 >> ");
+    scanf("%d", &x);
 
-	return 0;
+    dup = x * 2;
+
+    if (x < 100)
+    {
+        printf("%d\n", dup);
+    }
+    else
+    {
+        printf("Numero invalido\n");
+    }
+
+    return 0;
 }
